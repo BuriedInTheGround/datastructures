@@ -121,3 +121,32 @@ func TestRemoveFromTail(t *testing.T) {
 		t.Errorf("wrong size, the list should be empty")
 	}
 }
+
+func TestRemoveFirstOccurrence(t *testing.T) {
+	linkedList := New()
+
+	linkedList.InsertFromHead(1)
+	linkedList.InsertFromHead(2)
+	linkedList.InsertFromHead(3)
+	linkedList.InsertFromHead(4)
+	linkedList.InsertFromHead(5)
+
+	if err := linkedList.RemoveFirstOccurrence(42); err == nil {
+		t.Errorf("value %d is not in the list but was found", 42)
+	}
+
+	if err := linkedList.RemoveFirstOccurrence(3); err != nil {
+		t.Errorf("value %d to remove not found in the list", 3)
+	}
+	t.Log(linkedList) // Should be [ 5, 4, 2, 1 ].
+	n := linkedList.Head()
+	for i := 5; n != nil; i-- {
+		if i == 3 {
+			continue
+		}
+		if n.content != i {
+			t.Errorf("wrong data: got %d want %d", n.content, i)
+		}
+		n = n.next
+	}
+}

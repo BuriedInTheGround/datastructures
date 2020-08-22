@@ -150,6 +150,31 @@ func (ll *LinkedList) RemoveFromTail() int {
 	return data
 }
 
+// RemoveFirstOccurrence removes a Node that have a content equals to `value`,
+// if exists.
+//
+// Complexity: O(n)
+func (ll *LinkedList) RemoveFirstOccurrence(value int) error {
+	// If the element does not exists inside the list return an error.
+	if !ll.Contains(value) {
+		return fmt.Errorf("cannot remove value %d not in the list", value)
+	}
+
+	// If there is only one Node left, clear the list.
+	if ll.Head() == ll.Tail() {
+		ll.Clear()
+		return nil
+	}
+
+	// Otherwise, loop through the chain until the Node next to the cursor is
+	// the one that must be removed, and than remove it.
+	var cur *Node
+	for cur = ll.Head(); cur.Next().Content() != value; cur = cur.Next() {
+	}
+	cur.next = cur.Next().Next()
+	return nil
+}
+
 func (ll LinkedList) String() string {
 	res := "[ "
 	for n := ll.Head(); n != nil; n = n.Next() {
