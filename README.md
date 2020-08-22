@@ -15,7 +15,7 @@ At the moment this **cannot** be considered a complete and/or safe package. This
 
 ### Stack
 
-*TODO*
+Implementation with Go [Slices](https://golang.org/ref/spec#Slice_types) [here](https://github.com/BuriedInTheGround/datastructures/blob/master/stack/stack.go).
 
 ### Queue
 
