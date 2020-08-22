@@ -149,4 +149,8 @@ func TestRemoveFirstOccurrence(t *testing.T) {
 		}
 		n = n.next
 	}
+
+	if linkedList.Size() != 4 {
+		t.Errorf("wrong sze, the list should contains %d elements", 4)
+	}
 }
