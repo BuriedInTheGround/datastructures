@@ -8,10 +8,10 @@ At the moment this **cannot** be considered a complete and/or safe package. This
 
 ### Linked List(s)
 
-| Linking type       | Implementation                                                                                            |
-| ------------------ | --------------------------------------------------------------------------------------------------------- |
-| Singly Linked List | [linkedlist.go](https://github.com/BuriedInTheGround/datastructures/blob/master/linkedlist/linkedlist.go) |
-| Doubly Linked List | *TODO*                                                                                                    |
+| Linking type       | Implementation                                                                                                              |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| Singly Linked List | [linkedlist.go](https://github.com/BuriedInTheGround/datastructures/blob/master/linkedlist/linkedlist.go)                   |
+| Doubly Linked List | [doublylinkedlist.go](https://github.com/BuriedInTheGround/datastructures/blob/master/doublylinkedlist/doublylinkedlist.go) |
 
 ### Stack
 
