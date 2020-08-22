@@ -172,6 +172,7 @@ func (ll *LinkedList) RemoveFirstOccurrence(value int) error {
 	for cur = ll.Head(); cur.Next().Content() != value; cur = cur.Next() {
 	}
 	cur.next = cur.Next().Next()
+	ll.size--
 	return nil
 }
 
