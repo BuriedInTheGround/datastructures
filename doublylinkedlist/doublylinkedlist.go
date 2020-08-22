@@ -34,8 +34,8 @@ type DoublyLinkedList struct {
 }
 
 // New returns a new DoublyLinkedList instance.
-func New() *DoublyLinkedList {
-	return &DoublyLinkedList{head: nil, tail: nil, size: 0}
+func New() DoublyLinkedList {
+	return DoublyLinkedList{head: nil, tail: nil, size: 0}
 }
 
 // Head returns the Node which is in front of the list.
