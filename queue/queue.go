@@ -48,7 +48,7 @@ func (q *Queue) Dequeue() int {
 	return q.data.RemoveFromTail()
 }
 
-// Peek returns the value of the the element that would be dequeued.
+// Peek returns the value of the next element that would be dequeued.
 //
 // Complexity: O(1)
 func (q *Queue) Peek() int {
