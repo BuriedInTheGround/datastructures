@@ -19,7 +19,7 @@ Implementation with Go [Slices](https://golang.org/ref/spec#Slice_types) [here](
 
 ### Queue
 
-*TODO*
+Implementation with Doubly Linked List [here](https://github.com/BuriedInTheGround/datastructures/blob/master/queue/queue.go).
 
 ### Priority Queue
 
