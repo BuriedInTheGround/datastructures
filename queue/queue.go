@@ -17,22 +17,30 @@ func New() Queue {
 }
 
 // Size returns the number of elements that are into the queue.
+//
+// Complexity: O(1)
 func (q *Queue) Size() int {
 	return q.data.Size()
 }
 
 // IsEmpty returns whether the queue is empty or not.
+//
+// Complexity: O(1)
 func (q *Queue) IsEmpty() bool {
 	return q.data.IsEmpty()
 }
 
 // Enqueue adds an element with the specified `value` to the queue.
+//
+// Complexity: O(1)
 func (q *Queue) Enqueue(value int) {
 	q.data.InsertFromHead(value)
 }
 
 // Dequeue removes an element from the queue, following the FIFO precedence,
 // and returns its value.
+//
+// Complexity: O(1)
 func (q *Queue) Dequeue() int {
 	if q.IsEmpty() {
 		panic("Dequeue: cannot dequeue from an empty queue")
@@ -41,6 +49,8 @@ func (q *Queue) Dequeue() int {
 }
 
 // Peek returns the value of the the element that would be dequeued.
+//
+// Complexity: O(1)
 func (q *Queue) Peek() int {
 	if q.IsEmpty() {
 		panic("Dequeue: cannot peek from an empty queue")
@@ -49,12 +59,16 @@ func (q *Queue) Peek() int {
 }
 
 // Contains returns whether a value is present inside the queue or not.
+//
+// Complexity: O(n)
 func (q *Queue) Contains(value int) bool {
 	return q.data.Contains(value)
 }
 
 // RemoveFirstOccurrence removes the last element with the specified `value`
 // that entered the queue, if exists.
+//
+// Complexity: O(n)
 func (q *Queue) RemoveFirstOccurrence(value int) error {
 	err := q.data.RemoveFirstOccurrence(value)
 	if err != nil {
