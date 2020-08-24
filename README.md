@@ -23,5 +23,12 @@ Implementation with Doubly Linked List [here](https://github.com/BuriedInTheGrou
 
 ### Priority Queue
 
+Min Priority Queue implementation with array-based [Binary Heap](https://en.wikipedia.org/wiki/Binary_heap) [here](https://github.com/BuriedInTheGround/datastructures/blob/master/priorityqueue/minpq.go).
+
+### Union Find
+
 *TODO*
 
+### Binary Search Tree
+
+*TODO*
