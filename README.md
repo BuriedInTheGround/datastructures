@@ -27,7 +27,7 @@ Min Priority Queue implementation with array-based [Binary Heap](https://en.wiki
 
 ### Union Find
 
-*TODO*
+Implementation with path compression [here](https://github.com/BuriedInTheGround/datastructures/blob/master/unionfind/unionfind.go).
 
 ### Binary Search Tree
 
