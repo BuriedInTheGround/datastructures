@@ -31,4 +31,4 @@ Implementation with path compression [here](https://github.com/BuriedInTheGround
 
 ### Binary Search Tree
 
-*TODO*
+Implementation [here](https://github.com/BuriedInTheGround/datastructures/blob/master/binarysearchtree/binarysearchtree.go).
