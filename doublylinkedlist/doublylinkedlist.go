@@ -160,7 +160,7 @@ func (dll *DoublyLinkedList) RemoveFromTail() int {
 	return data
 }
 
-// RemoveFirstOccurrence removes the first occurence of a Node that have a
+// RemoveFirstOccurrence removes the first occurrence of a Node that have a
 // content equals to `value`, if exists.
 //
 // Complexity: O(n)
